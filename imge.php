@@ -12,8 +12,7 @@
          if($ext=='jpg'){
             $ext = 'jpeg';
          }
-       
-         
+      
         $funName =  'imagecreatefrom'.$ext; // 拼装函数的名字
         $hSrc = $funName($picName);  //创建图片画布
       
@@ -39,8 +38,7 @@
 
        $outName = 'image'.$ext; //拼接 输出函数的函数名字
        // $outName($hDst,"./sm_{$fName}.{$ext}");
-      
-       
+        
     //4.销毁    
        imagedestroy($hDst);
        imagedestroy($hSrc);
